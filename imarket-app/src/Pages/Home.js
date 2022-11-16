@@ -1,17 +1,17 @@
 import React from "react";
 import Nav from "../Components/Nav";
-import footer from "../Components/footer";
+import Foot from "../Components/Foot";
+import Body from "../Components/Body";
 
 
-function Home (){
-
+function Home() {
     return(
-    <div>
-        <Nav/>
-        <Footer/>
-    </div>
-
-)
+           <>
+            <Nav/>
+            <Body/>
+            <Foot/>
+            </>
+    )
 }
 
 export default Home;
