@@ -1,14 +1,14 @@
 import React from "react";
 import Nav from "../Components/Nav";
 import Foot from "../Components/Foot";
-import Body from "../Components/Body";
+import ProductGallery from "../Components/ProductGallery";
 
 
 function Home() {
     return(
            <>
             <Nav/>
-            <Body/>
+            <ProductGallery/>
             <Foot/>
             </>
     )
