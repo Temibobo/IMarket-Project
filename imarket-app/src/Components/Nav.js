@@ -4,7 +4,7 @@ import logo from "../Image/logo.png";
 function Nav(){ 
 
     return(
-        <div className="hidden sm:ml-6 sm:block m-2 p-3 bg-white">
+        <div className="hidden sm:ml-6 sm:block m-2 p-3 bg-white shadow-lg  dark:border-gray-900">
             <div className="flex justify-between">
 
                 <img src={logo} className="logo" alt="logo"/>

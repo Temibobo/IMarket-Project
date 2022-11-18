@@ -30,7 +30,7 @@ function Foot(){
             </div>
         </div>
     
-        <p className="">Designed by Temitope Ayannusi</p>
+        <p className="">Designed by @<span className="text-amber-600">Temitope Ayannusi</span></p>
     </div>
     )
 }
