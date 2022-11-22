@@ -23,7 +23,7 @@ function Verify(){
                                     
                                     
                                     <input type="text" placeholder="Enter code" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
-                                    <Link to='/verify' className="hover:bg-white text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Verify my account</Link>
+                                    <Link to='/create' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Verify my account</Link>
                                 </form>
                                 
                                 <div><p>Didn't receive any code? <span className="text-red-600">Resend</span></p></div>

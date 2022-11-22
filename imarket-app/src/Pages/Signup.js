@@ -29,7 +29,7 @@ function Signup() {
                                         <input type="tel" placeholder="Enter phone number" className=" text-gray-400 rounded-md   w-96 px-4 mx-auto py-3 mb-5"></input>
                                         <input type="email" placeholder="Enter email address" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
                                         <input type="password" placeholder="Enter password" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
-                                        <Link to='/verify' className="hover:bg-white text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Login</Link>
+                                        <Link to='/verify' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Login</Link>
                                     </form>
                                     
                                     <div><p>Have an account? <span className="text-red-600">Login</span></p></div>

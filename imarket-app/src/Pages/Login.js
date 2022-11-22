@@ -28,7 +28,7 @@ function Login(){
                                     <form className="">
                                         <input type="email" placeholder="Enter email address" className=" text-gray-400 rounded-md mx-auto w-96 px-4 py-3 mb-5 "></input>
                                         <input type="password" placeholder="Enter password" className=" text-gray-400 rounded-md  w-96 px-4 py-3 mb-10"></input>
-                                        <button className="hover:bg-white text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Login </button>
+                                        <button className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Login </button>
                                     </form>
                                     
                                     <div><p>Don't have an account? <span className="text-red-600">Create Account</span></p></div>
