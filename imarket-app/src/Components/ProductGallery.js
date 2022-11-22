@@ -25,8 +25,8 @@ import ProductItem from "./ProductItem";
 
 function ProductGallery(){
     return(
-        <div className="gallery flex place-content-evenly bg-gray-50 pt-8">
-            <div className="sidebar  p-6  border-gray-200 rounded-lg shadow-inner  dark:border-gray-700">
+        <div className="gallery flex place-content-evenly bg-gray-100 pt-8">
+            <div className="sidebar bg-white p-6  border-gray-300 rounded-lg shadow-inner  dark:border-gray-700">
                 <h4 className="uppercase font-bold mt-2 mr-1">Categories</h4>
                 <div className="h-px bg-slate-200 mt-3 mb-3"></div>
                 <ul className="left m-4flex flex-col space-y-6">
@@ -34,10 +34,10 @@ function ProductGallery(){
                     <li className=" flex gap-3"><img src={Property}/><span className="pt-2 mr-16">Property</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={Electronics}/><span className="pt-2 mr-12">Electronics</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={jobs}/><span className="pt-2 mr-24">Jobs</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={Homeappliances}/><span className="pt-2 mr-16">Home Appliances</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img src={Homeappliances}/><span className="pt-2 mr-4">Home Appliances</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={sports}/><span className="pt-2 mr-16">Sports</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={games}/><span className="pt-2 mr-16">Games</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={health}/><span className="pt-2 mr-16">Beauty & Health</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img src={health}/><span className="pt-2 mr-4">Beauty & Health</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={food}/><span className="pt-2 mr-16">Foods</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={fashion}/><span className="pt-2 mr-16">Fashion</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={services}/><span className="pt-2 mr-16">Services</span><FiChevronRight className="mt-3.5"/></li>
@@ -60,7 +60,7 @@ function ProductGallery(){
                             <div className="popular ">
                                 <div className="flex justify-between">
                                     <h3 className="font-bold text-xl">Explore Popular Brands</h3>
-                                    <p className="text-orange-500 flex">SEE ALL <FiChevronRight /></p>
+                                    <p className="text-orange-500 flex">SEE ALL <FiChevronRight className="m-1" /></p>
                                 </div>
 
                                 <div className="m-7 grid grid-cols-6 gap-2 ">{Popular.map((item)=>
@@ -75,7 +75,7 @@ function ProductGallery(){
                         <div>
                                 <div className="flex justify-between">
                                     <h3 className="font-bold text-xl">Daily Deals</h3>
-                                    <p className="text-orange-500 flex ">SEE ALL <FiChevronRight/></p>
+                                    <p className="text-orange-500 flex ">SEE ALL <FiChevronRight className="m-1" /></p>
                                 </div>
                                 <div className="flex justify-between mt-5">
                                     <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Phones</button>

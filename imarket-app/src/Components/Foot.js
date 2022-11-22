@@ -4,7 +4,7 @@ import Logo from "../Image/Footerlogo.png";
 function Foot(){
 
     return(
-    <div className=" bg-gray-800 text-white text-sm  px-12 pb-5 pt-5 text-center">
+    <div className=" bg-gray-800 relative text-white text-sm  px-12 pb-5 pt-5 text-center">
         <div className="flex h-50 justify-between" >
             <div className="mt-7">
                 <ul className="text-left" >

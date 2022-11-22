@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../Image/logo.png";
+import { Link } from 'react-router-dom';
+import { FiHelpCircle, FiSearch } from "react-icons/fi";
 
 
 function Nav(){ 
@@ -9,11 +11,12 @@ function Nav(){
             <div className="flex justify-between">
 
                 <img src={logo} className="logo" alt="logo"/>
-                <input type="text" placeholder="Search for anything" className=" search px-20  rounded-md text-sm font-sm"/>
+                <input type="text "  placeholder="Search for anything " className="  search w-80  rounded-md text-sm font-sm"/>
                 <div className="flex justify-items-end space-x-4">
-                    <a href="#" className="bg-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="#" className="bg-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Help</a>
-                    <button className=" bg-orange-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Get started </button>
+                    <Link to='/' className=" hover:bg-gray-300  hover:text-black px-3 py-2 rounded-md text-sm font-bold">Home</Link>
+                    <Link to="/signup" className=" hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Signup</Link>
+                     <Link to="/" className=" hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium flex "><FiHelpCircle className="m-1"/> Help</Link>
+                    <Link to='/login' className=" bg-orange-500 hover:bg-gray-300 hover:text-black px-7 py-2 rounded-md text-sm font-medium">Get started </Link>
                 </div>
             </div>
         </div>
