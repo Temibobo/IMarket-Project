@@ -44,6 +44,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      'imarketorange': '#1c1b1f',
     }),
     columns: {
       auto: 'auto',
