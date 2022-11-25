@@ -4,9 +4,9 @@ import Logo from "../Image/Footerlogo.png";
 function Foot(){
 
     return(
-    <div className=" bg-gray-800 relative text-white text-sm  px-12 pb-5 pt-5 text-center">
-        <div className="flex h-50 justify-between" >
-            <div className="mt-7">
+    <div className=" bg-gray-800 relative text-white text-sm  px-12 pb-5 pt-5 text-center sm:">
+        <div className="flex h-50 justify-between " >
+            <div className="mt-7 sm:mt-7">
                 <ul className="text-left" >
                     <li className="my-2"><a href="#" >Home</a></li>
                     <li className="my-2"><a href="#" >About us</a></li>
@@ -16,7 +16,7 @@ function Foot(){
                 </ul>
                 </div>
             <div className="my-10 center">
-                <img src={Logo} alt="Footerlogo"/>
+                <img className="ml-3" src={Logo} alt="Footerlogo"/>
                 <p className="m-0">Reach Globally, Interact Locally</p>
             </div>
                 <div className="mt-7">

@@ -30,20 +30,20 @@ function Create(){
 
                                     <form className="flex flex-col">
                                         
-                                                <input  type="text" placeholder="Enter full name" className=" text-gray-400 rounded-md w-96 px-4 py-3 mx-auto mb-5 "></input>
-                                                <input type="tel" placeholder="Enter phone number" className=" text-gray-400 rounded-md   w-96 px-4 mx-auto py-3 mb-5"></input>
-                                                <input type="email" placeholder="Enter email address" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
+                                                <input  type="text" placeholder="Enter full name" className=" text-gray-700 hover:bg-gray-100 rounded-md w-96 px-4 py-3 mx-auto mb-5 "></input>
+                                                <input type="tel" placeholder="Enter phone number" className=" text-gray-700 hover:bg-gray-100 rounded-md   w-96 px-4 mx-auto py-3 mb-5"></input>
+                                                <input type="email" placeholder="Enter email address" className=" text-gray-700 hover:bg-gray-100 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
                                                 
-                                                <select type="password" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5">
+                                                <select type="password" className=" text-gray-700 hover:bg-gray-100 rounded-md  w-96 mx-auto px-4 py-3 mb-5">
                                                     <option>Choose gender</option>
                                                     <option>Female</option>
                                                     <option>Male</option>
                                                 </select> 
 
-                                                <input type="text" onfocus="(this.type='date')" placeholder="Choose date of birth" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
+                                                <input type="text" onfocus="(this.type='date')" placeholder="Choose date of birth" className=" text-gray-700 hover:bg-gray-100 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
 
                                                 <p className="text-xs text-left mb-3 ">ADD SOCIAL MEDIA LINK *</p>
-                                                <input type="text" placeholder="@username" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
+                                                <input type="text" placeholder="@username" className=" text-gray-700 hover:bg-gray-100 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
                                                 <p className="text-xs text-left flex mb-4"><FiHelpCircle className=" text-orange-500 m-1 " />Add your correct social media account username for verification</p>
 
                                                 <Link to='/create2' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Next</Link>

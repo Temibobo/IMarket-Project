@@ -11,7 +11,7 @@ function Nav(){
             <div className="flex justify-between">
 
                 <img src={logo} className="logo" alt="logo"/>
-                <input type="text "  placeholder="Search for anything " className="  search w-80  rounded-md text-sm font-sm"/>
+                <input type="text "  placeholder="Search for anything " className="  search w-80 border-transparent border-solid pl-2 rounded-md text-sm font-sm"/>
                 <div className="flex justify-items-end space-x-4">
                     <Link to='/' className=" hover:bg-gray-300  hover:text-black px-3 py-2 rounded-md text-sm font-bold">Home</Link>
                     <Link to="/signup" className=" hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Signup</Link>

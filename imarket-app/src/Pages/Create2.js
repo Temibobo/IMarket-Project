@@ -12,7 +12,7 @@ function Create2(){
             <Nav/>
 
             <div className="grid grid-cols-2 relative ">
-                    <div className="relative" style={{backgroundImage:`url(${loginimage})`,backgroundRepeat:"no-repeat",  }}>first</div>
+                    <div className="relative" style={{backgroundImage:`url(${loginimage})`,backgroundRepeat:"no-repeat",  }}></div>
 
 
                     
@@ -28,12 +28,15 @@ function Create2(){
 
                                     <form className="flex flex-col">
                                         
-                                                <input  type="text" placeholder="Enter display name" className=" text-gray-400 rounded-md w-96 px-4 py-3 mx-auto mb-5 "></input>
-                                                <input type="text" placeholder="Upload profile photo" className=" text-gray-400 rounded-md   w-96 px-4 mx-auto py-3 mb-5"></input>
+                                                <input  type="text" placeholder="Enter display name" className=" text-gray-700 hover:bg-gray-100 rounded-md w-96 px-4 py-3 mx-auto mb-5 "/>
+                                               
+                                                <input type="file" placeholder="Upload profile photo" className=" text-black  hover:bg-gray-100 rounded-md   w-96 px-4 mx-auto py-3 mb-5"/>
                                                 
-                                                <p className="text-xs text-left mb-4 flex"><FiCheckCircle className="mr-2 mb-2 text-orange-500" /> I accept the  terms & conditions  of the iMarket Community</p>
+                                                
+                                                
+                                                < p className="text-xs text-left mb-4 flex"><FiCheckCircle className="mr-2 mb-2 " /> I accept the terms & conditions of the iMarket Community</p>
 
-                                                <Link to='/create' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Next</Link>
+                                                <Link to='/create' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Submit</Link>
                                     </form>
                                     
                                     

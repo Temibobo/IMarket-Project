@@ -22,7 +22,7 @@ function Verify(){
                                     
                                     
                                     
-                                    <input type="text" placeholder="Enter code" className=" text-gray-400 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
+                                    <input type="text" placeholder="Enter code" className=" text-gray-700 hover:bg-gray-100 rounded-md  w-96 mx-auto px-4 py-3 mb-5"></input>
                                     <Link to='/create' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Verify my account</Link>
                                 </form>
                                 

@@ -21,11 +21,20 @@ import kids from "../Image/kids.png";
 import { FiChevronRight } from "react-icons/fi"; 
 import Popular from "../Popular";
 import ProductItem from "./ProductItem";
+import Popup from "../Pages/Popup";
+import { useState } from "react";
 
 
 function ProductGallery(){
+
+
+const [popup, setPopupOn] = useState(false);
+
+
+
+
     return(
-        <div className="gallery flex place-content-evenly bg-gray-100 pt-8">
+        <div onClick={() => setPopupOn(true)} type="button" className="gallery flex place-content-evenly bg-gray-100 pt-8">
             <div className="sidebar bg-white p-6  border-gray-300 rounded-lg shadow-inner  dark:border-gray-700">
                 <h4 className="uppercase font-bold mt-2 mr-1">Categories</h4>
                 <div className="h-px bg-slate-200 mt-3 mb-3"></div>
@@ -89,7 +98,7 @@ function ProductGallery(){
                                     
                                     
                                 </div>
-                            <div className="daily grid grid-cols-4 gap-2 pt-6">  {products.map ((clip) =>
+                            <div className="daily grid grid-cols-4 gap-3 pt-8 text-gray-600 ">  {products.map ((clip) =>
                                 <ProductItem
                                     key={clip.id}
                                     name={clip.name}
@@ -99,6 +108,8 @@ function ProductGallery(){
                                     category={clip.category}
                                     />)}
                             </div>
+
+                            {popup && < Popup setPopupOn={setPopupOn} />}
                         </div>
                     </div>
                 </div>    

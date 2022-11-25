@@ -10,8 +10,8 @@ function Login(){
     return(
         <div>
             <Nav/>
-                <div className="grid grid-cols-2 relative ">
-                    <div className="relative" style={{backgroundImage:`url(${loginimage})`,backgroundRepeat:"no-repeat",  }}>first</div>
+                <div className="grid grid-cols-2 relative">
+                    <div className="relative" style={{backgroundImage:`url(${loginimage})`,backgroundRepeat:"no-repeat",  }}></div>
 
 
                     
@@ -23,11 +23,11 @@ function Login(){
                                 <p className="font-bold text-2xl ">Welcome to iMarket</p>
                                 <p className="text-sm mb-8 ">lorem ipsum dolor dit amet, consectur adipicing elit</p>
 
-                                    <button className="hover:bg-orange-400  bg-gray-300 mx-auto w-96 px-28 py-3 rounded-md text-sm font-medium mb-10 mt-14 flex text-center "><FiInstagram className="m-1 "/>Login with Google</button>
+                                    <button className="hover:bg-orange-400  bg-gray-300 mx-auto w-96 px-28 py-3 rounded-md text-sm font-medium mb-10 mt-14 flex text-center "><FiInstagram className="m-1 "/>Login with Instagram</button>
 
                                     <form className="">
-                                        <input type="email" placeholder="Enter email address" className=" text-gray-400 rounded-md mx-auto w-96 px-4 py-3 mb-5 "></input>
-                                        <input type="password" placeholder="Enter password" className=" text-gray-400 rounded-md  w-96 px-4 py-3 mb-10"></input>
+                                        <input type="email" placeholder="Enter email address" className=" text-gray-400 hover:bg-gray-100 rounded-md mx-auto w-96 px-4 py-3 mb-5 "></input>
+                                        <input type="password" placeholder="Enter password" className=" text-gray-400 hover:bg-gray-100 rounded-md  w-96 px-4 py-3 mb-10"></input>
                                         <button className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Login </button>
                                     </form>
                                     
