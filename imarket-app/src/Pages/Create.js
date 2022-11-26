@@ -14,7 +14,7 @@ function Create(){
             <Nav/>
 
             <div className="grid grid-cols-2 relative ">
-                    <div className="relative" style={{backgroundImage:`url(${loginimage})`,backgroundRepeat:"no-repeat",  }}>first</div>
+                    <div className="relative" style={{backgroundImage:`url(${loginimage})`,backgroundRepeat:"no-repeat",  }}></div>
 
 
                     

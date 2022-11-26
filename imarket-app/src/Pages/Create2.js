@@ -36,7 +36,7 @@ function Create2(){
                                                 
                                                 < p className="text-xs text-left mb-4 flex"><FiCheckCircle className="mr-2 mb-2 " /> I accept the terms & conditions of the iMarket Community</p>
 
-                                                <Link to='/create' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Submit</Link>
+                                                <Link to='/Home' className="hover:bg-gray-300 text-white hover:text-gray-500 bg-blue-900 w-96 px-4 py-3 mx-auto rounded-md text-sm font-medium mb-5">Submit</Link>
                                     </form>
                                     
                                     

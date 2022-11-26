@@ -3,6 +3,7 @@ import Nav from "../Components/Nav";
 import Foot from "../Components/Foot";
 import loginimage from "../Image/loginimage.png";
 import { FiInstagram} from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 
 function Login(){

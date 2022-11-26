@@ -34,11 +34,12 @@ const [popup, setPopupOn] = useState(false);
 
 
     return(
-        <div onClick={() => setPopupOn(true)} type="button" className="gallery flex place-content-evenly bg-gray-100 pt-8">
-            <div className="sidebar bg-white p-6  border-gray-300 rounded-lg shadow-inner  dark:border-gray-700">
+        <div onClick={() => setPopupOn(false)} type="button" className="gallery flex place-content-evenly w-screen border-4 box-border overflow-x-hidden border-green-500 bg-gray-100 pt-8">
+            
+            <div className="sidebar bg-white p-6 hidden md:block w-1/4 border-gray-300 rounded-lg shadow-inner  dark:border-gray-700">
                 <h4 className="uppercase font-bold mt-2 mr-1">Categories</h4>
                 <div className="h-px bg-slate-200 mt-3 mb-3"></div>
-                <ul className="left m-4flex flex-col space-y-6">
+                <ul className="left m-4 flex flex-col space-y-6">
                     <li className=" flex gap-3"><img src={vehicles}/><span className="pt-2 mr-16">Vehicles</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={Property}/><span className="pt-2 mr-16">Property</span><FiChevronRight className="mt-3.5"/></li>
                     <li className=" flex gap-3"><img src={Electronics}/><span className="pt-2 mr-12">Electronics</span><FiChevronRight className="mt-3.5"/></li>
@@ -57,11 +58,11 @@ const [popup, setPopupOn] = useState(false);
             </div>
 
 
-                    <div className="flex flex-col">
-                            <div className="flex h-72 ml-5" >
+                    <div className="flex w-3/4 border border-red-500 flex-col">
+                         <div className="flex border border-blue-500 flex-wrap w-full h-72 md:pl-5 " >
                                 
-                                <div className="centered w-4/5 " style={{backgroundImage:`url(${card1})`,backgroundRepeat:"no-repeat",  }}></div>
-                                <div className="centered w-2/5 ml-5" style={{backgroundImage:`url(${card2})`,backgroundRepeat:"no-repeat",  }}></div>
+                                <div className=" hidden md:block w-3/5  border border-orange-500 " style={{ backgroundImage:`url(${card1})`,backgroundRepeat:"no-repeat",width:"610px", minWidth:"550px",  }}></div>
+                                <div className=" w-1/4 md:ml-8 min-w-40 border border-red-500 " style={{backgroundImage:`url(${card2})`,backgroundRepeat:"no-repeat", width:"310px", minWidth:"300px", }}></div>
                         </div>
 
 
