@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../Components/Nav";
 import Foot from "../Components/Foot";
 import signup from "../Image/signupimage.png";
-import { FiInstagram} from "react-icons/fi";
+// import { FiInstagram} from "react-icons/fi";
 import { Link } from "react-router-dom";
 // import usePasswordToggle from "../Hooks/usePasswordToggle";
 
