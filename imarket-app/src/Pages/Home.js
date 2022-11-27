@@ -7,12 +7,12 @@ import Popup from "./Popup";
 
 function Home() {
     return(
-           <>
+           <div className="bg-gray-100">
             <Nav/>
             <ProductGallery/>
             
             <Foot/>
-            </>
+            </div>
     )
 }
 

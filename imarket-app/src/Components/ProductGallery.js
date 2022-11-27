@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import products from "../data";
 import card1 from "../Image/card1.png";
 import card2 from "../Image/card2.png";
@@ -18,25 +18,37 @@ import kids from "../Image/kids.png";
 
 
 
-import { FiChevronRight } from "react-icons/fi"; 
+import { FiChevronRight, FiHelpCircle } from "react-icons/fi"; 
 import Popular from "../Popular";
 import ProductItem from "./ProductItem";
 import Popup from "../Pages/Popup";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function ProductGallery(){
 
 
-const [popup, setPopupOn] = useState(false);
+const [popup, setpopup] = useState(false);
 
-
+    function handleClosePopup(){
+        setpopup(prev=> !prev);
+    }
 
 
     return(
-        <div onClick={() => setPopupOn(false)} type="button" className="gallery flex place-content-evenly w-screen border-4 box-border overflow-x-hidden border-green-500 bg-gray-100 pt-8">
+        <>
+        <div onClick={() => setpopup(true)} type="button" className="gallery mx-auto flex place-content-evenly w-full box-border overflow-x-hidden bg-gray-100 pt-8" 
+            style={{maxWidth: '1400px'}}
+        >
             
             <div className="sidebar bg-white p-6 hidden md:block w-1/4 border-gray-300 rounded-lg shadow-inner  dark:border-gray-700">
+                <div className="md:hidden flex justify-items-end space-x-4">
+                    <Link to='/' className=" hover:bg-gray-300  hover:text-black px-3 py-2 rounded-md text-sm font-bold">Home</Link>
+                    <Link to="/signup" className=" hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Signup</Link>
+                    <Link to="/" className=" hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium flex "><FiHelpCircle className="m-1"/> Help</Link>
+                    <Link to='/login' className=" bg-orange-500 hover:bg-gray-300 hover:text-black px-7 py-2 rounded-md text-sm font-medium">Get started </Link>
+                </div>
                 <h4 className="uppercase font-bold mt-2 mr-1">Categories</h4>
                 <div className="h-px bg-slate-200 mt-3 mb-3"></div>
                 <ul className="left m-4 flex flex-col space-y-6">
@@ -57,64 +69,66 @@ const [popup, setPopupOn] = useState(false);
                 </ul>
             </div>
 
+            <div className="overflow-x-hidden flex flex-col w-full md:w-3/4">
+                <div className="flex flex-wrap justify-center md:justify-start w-full min-h-72 md:pl-5 " >   
+                    <div className=" hidden min-h-72 h-72 md:block w-3/5 md:mr-8 " style={{ backgroundImage:`url(${card1})`,backgroundRepeat:"no-repeat",width:"610px", minWidth:"550px",  }}></div>
+                    <div className=" md:hidden xl:block min-h-72 h-72 " style={{backgroundImage:`url(${card2})`,backgroundRepeat:"no-repeat", width:"292px", minWidth:"290px", }}></div>
+                </div>
 
-                    <div className="flex w-3/4 border border-red-500 flex-col">
-                         <div className="flex border border-blue-500 flex-wrap w-full h-72 md:pl-5 " >
-                                
-                                <div className=" hidden md:block w-3/5  border border-orange-500 " style={{ backgroundImage:`url(${card1})`,backgroundRepeat:"no-repeat",width:"610px", minWidth:"550px",  }}></div>
-                                <div className=" w-1/4 md:ml-8 min-w-40 border border-red-500 " style={{backgroundImage:`url(${card2})`,backgroundRepeat:"no-repeat", width:"310px", minWidth:"300px", }}></div>
+
+                <div className="main p-2 md:p-5">
+                    <div className="popular ">
+                        <div className="flex justify-between">
+                            <h3 className="font-bold text-xl">Explore Popular Brands</h3>
+                            <p className="text-orange-500 flex">SEE ALL <FiChevronRight className="m-1" /></p>
                         </div>
 
+                        <div className=" py-4 lg:p-7 grid grid-cols-6 gap-2 ">{Popular.map((item)=>
+                        {
+                            return <img src={item.url} key={item.id} alt={item.name}/>
+                        })}
+                        </div>
+                        
+                    </div>
 
-                        <div className="main p-5 ">
-                            <div className="popular ">
-                                <div className="flex justify-between">
-                                    <h3 className="font-bold text-xl">Explore Popular Brands</h3>
-                                    <p className="text-orange-500 flex">SEE ALL <FiChevronRight className="m-1" /></p>
-                                </div>
 
-                                <div className="m-7 grid grid-cols-6 gap-2 ">{Popular.map((item)=>
-                                {
-                                    return <img src={item.url} key={item.id} alt={item.name}/>
-                                })}
-                            </div>
+                    <div className="">
+                        <div className="flex justify-between ">
+                            <h3 className="font-bold text-xl">Daily Deals</h3>
+                            <p className="text-orange-500 flex ">SEE ALL <FiChevronRight className="m-1" /></p>
+                        </div>
+                        <div className="flex justify-between mt-5 overflow-x-scroll scrollbar-hide">
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 mx-2 py-2 px-2 md:px-4 rounded">Phones</button>
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 mx-2 py-2 px-2 md:px-4 rounded">Vehicles</button>
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 mx-2 py-2 px-2 md:px-4 rounded">Fashion</button>
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 mx-2 py-2 px-2 md:px-4 rounded">Electronics</button>
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 mx-2 py-2 px-2 md:px-4 rounded">Appliances</button>
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 min-w-max mx-2 py-2 px-2 md:px-4 rounded">Beauty & Health</button>
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 mx-2 py-2 px-2 md:px-4 rounded">Sports</button>
+                            <button className="bg-gray-200 hover:bg-gray-300 text-gray-500 h-10 mx-2 py-2 px-2 md:px-4 rounded">Games</button>
+                            
                             
                         </div>
-
-
-                        <div>
-                                <div className="flex justify-between">
-                                    <h3 className="font-bold text-xl">Daily Deals</h3>
-                                    <p className="text-orange-500 flex ">SEE ALL <FiChevronRight className="m-1" /></p>
-                                </div>
-                                <div className="flex justify-between mt-5">
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Phones</button>
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Vehicles</button>
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Fashion</button>
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Electronics</button>
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Appliances</button>
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Beauty & Health</button>
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Sports</button>
-                                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-500  py-2 px-4 rounded">Games</button>
-                                    
-                                    
-                                </div>
-                            <div className="daily grid grid-cols-4 gap-3 pt-8 text-gray-600 ">  {products.map ((clip) =>
-                                <ProductItem
-                                    key={clip.id}
-                                    name={clip.name}
-                                    url={clip.url}
-                                    location={clip.location}
-                                    price={clip.price}
-                                    category={clip.category}
-                                    />)}
-                            </div>
-
-                            {popup && < Popup setPopupOn={setPopupOn} />}
+                        <div className="daily border h-screen64  md:h-max overflow-y-scroll flex flex-wrap justify-center items-center pt-4 mt-4 text-gray-600 " >  
+                        {products.map ((clip) =>
+                            <ProductItem
+                                key={clip.id}
+                                name={clip.name}
+                                url={clip.url}
+                                location={clip.location}
+                                price={clip.price}
+                                category={clip.category}
+                            />
+                        )}
                         </div>
+
+                        
                     </div>
-                </div>    
+                </div>
+            </div>    
         </div>
+        < Popup popup={popup} setPopupOn={handleClosePopup} />
+        </>
 
     )
 }

@@ -4,7 +4,7 @@ const products = [
         name: "Toyota Corolla",
         url: require ('./Image/Deal1.png'),
         category: "car",
-        price: "#1,800,000",
+        price: "₦1,800,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -12,7 +12,7 @@ const products = [
         name: "Apple iPhone",
         url: require ('./Image/Deal2.png'),
         category: "Phone",
-        price: "#1,200,000",
+        price: "₦1,200,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -20,7 +20,7 @@ const products = [
         name: "Honda Accord",
         url: require ('./Image/Deal3.png'),
         category: "car",
-        price: "#1,520,000",
+        price: "₦1,520,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -28,7 +28,7 @@ const products = [
         name: "Toyota Camry",
         url: require ('./Image/Deal4.png'),
         category: "car",
-        price: "#1,750,000",
+        price: "₦1,750,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -44,7 +44,7 @@ const products = [
         name: "Samsung Galaxy Note",
         url: require ('./Image/Deal6.png'),
         category: "phone",
-        price: "#600,000",
+        price: "₦600,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -52,7 +52,7 @@ const products = [
         name: "2 - bedroom Apartment",
         url: require ('./Image/Deal7.png'),
         category: "House",
-        price: "#1,000,000",
+        price: "₦1,000,000",
         location: "Ikeja,Lagos",
     },
     {
@@ -60,7 +60,7 @@ const products = [
         name: "Honda Civic",
         url: require ('./Image/Deal8.png'),
         category: "car",
-        price: "#1,650,000",
+        price: "₦1,650,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -68,7 +68,7 @@ const products = [
         name: "Short Gown",
         url: require ('./Image/Deal9.png'),
         category: "cloth",
-        price: "#62,000",
+        price: "₦62,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -76,7 +76,7 @@ const products = [
         name: "Sneakers",
         url: require ('./Image/Deal10.png'),
         category: "shoe",
-        price: "#1,800,000",
+        price: "₦1,800,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -84,7 +84,7 @@ const products = [
         name: "Hyundai",
         url: require ('./Image/Deal11.png'),
         category: "car",
-        price: "#1,800,000",
+        price: "₦1,800,000",
         location: "Ikeja, Lagos",
     },
     {
@@ -92,7 +92,7 @@ const products = [
         name: "Toyota Corolla",
         url: require ('./Image/Deal12.png'),
         category: "car",
-        price: "#1,800,000",
+        price: "₦1,800,000",
         location: "Ikeja, Lagos",
     },
 ]

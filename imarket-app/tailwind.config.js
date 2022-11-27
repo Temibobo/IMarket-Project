@@ -44,7 +44,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      'imarketorange': '#1c1b1f',
+      'imarketblue': '#020208',
     }),
     columns: {
       auto: 'auto',
@@ -556,9 +556,11 @@ module.exports = {
       '5/6': '83.333333%',
       full: '100%',
       screen: '100vh',
+      screen64: '64vh',
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
+
     }),
     inset: ({ theme }) => ({
       auto: 'auto',
@@ -974,5 +976,6 @@ module.exports = {
   ],
   plugins: [
     require('@tailwindcss/forms'),
+    require('tailwind-scrollbar-hide'),
   ],
 }
