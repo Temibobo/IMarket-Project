@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../Image/logo.png";
 import { Link } from 'react-router-dom';
-import { FiChevronRight, FiHelpCircle, FiMenu, FiSearch } from "react-icons/fi";
+import { FiChevronRight, FiHelpCircle, FiMenu } from "react-icons/fi";
 import vehicles from "../Image/vehicles.png";
 import Property from "../Image/Property.png";
 import Electronics from "../Image/Electronics.png";
@@ -44,18 +44,18 @@ function Nav(){
                 <h4 className="uppercase font-bold mt-2 mr-1">Categories</h4>
                 <div className="h-px bg-slate-200 mt-3 mb-3"></div>
                 <ul className="left m-4 flex flex-col space-y-6">
-                    <li className=" flex gap-3"><img src={vehicles}/><span className="pt-2 mr-16">Vehicles</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={Property}/><span className="pt-2 mr-16">Property</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={Electronics}/><span className="pt-2 mr-12">Electronics</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={jobs}/><span className="pt-2 mr-24">Jobs</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={Homeappliances}/><span className="pt-2 mr-4">Home Appliances</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={sports}/><span className="pt-2 mr-16">Sports</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={games}/><span className="pt-2 mr-16">Games</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={health}/><span className="pt-2 mr-4">Beauty & Health</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={food}/><span className="pt-2 mr-16">Foods</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={fashion}/><span className="pt-2 mr-16">Fashion</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={services}/><span className="pt-2 mr-16">Services</span><FiChevronRight className="mt-3.5"/></li>
-                    <li className=" flex gap-3"><img src={kids}/><span className="pt-2 mr-16">Kids</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={vehicles}/><span className="pt-2 mr-16">Vehicles</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon"  src={Property}/><span className="pt-2 mr-16">Property</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={Electronics}/><span className="pt-2 mr-12">Electronics</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={jobs}/><span className="pt-2 mr-24">Jobs</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={Homeappliances}/><span className="pt-2 mr-4">Home Appliances</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={sports}/><span className="pt-2 mr-16">Sports</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={games}/><span className="pt-2 mr-16">Games</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={health}/><span className="pt-2 mr-4">Beauty & Health</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={food}/><span className="pt-2 mr-16">Foods</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={fashion}/><span className="pt-2 mr-16">Fashion</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={services}/><span className="pt-2 mr-16">Services</span><FiChevronRight className="mt-3.5"/></li>
+                    <li className=" flex gap-3"><img alt="car-icon" src={kids}/><span className="pt-2 mr-16">Kids</span><FiChevronRight className="mt-3.5"/></li>
                     
 
                 </ul>
